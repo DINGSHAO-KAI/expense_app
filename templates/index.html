@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>每日消費紀錄</title>
+</head>
+<body>
+    <h1>每日消費紀錄</h1>
+    <a href="/add">新增紀錄</a>
+    <ul>
+        {% for item in records %}
+        <li>{{ item[1] }} - ${{ item[2] }} - {{ item[3] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
